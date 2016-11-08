@@ -207,28 +207,5 @@ h1{
 </ul>
 </td> 
 </table> -->
-
-  <div>
-    Name:
-    <span id="display">Jsbin1</span>
-    <input type="text" id="edit" style="display:none" />
-  </div>
-  <div>
-    Name:
-    <span id="display2">Jsbin2</span>
-    <input type="text" id="edit" style="display:none" />
-  </div>
-  
-<script id="jsbin-javascript">
-$("#display").click(function(){
-  $(this).hide();
-  $(this).siblings("#edit").show().val($(this).text()).focus();
-});
-
-$("#edit").focusout(function(){
-$(this).hide();  $(this).siblings("#display").show().text($(this).val());
-});
-</script>
-
 </body>
 </html>
